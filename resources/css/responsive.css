@@ -1,0 +1,91 @@
+@media(max-width:1024px){
+    .mobile-menu span{
+        display:block;
+    }
+    .overly a{
+        display:block;
+    }
+   .overly-content{
+    display: block;
+   }
+    .row{
+        margin:0 15px;
+        }
+       
+    html{
+        font-size: 57.5%;
+       }
+   .main-nav{
+    display: none;
+   }
+   .hero-text-box{
+    width: 90%;
+   }
+   .hero-text-box h1{
+    margin:0 3rem;
+   }
+   .clien-photo{
+    width: 100%;
+    float: none;
+    text-align: center;
+   }
+   .clien-review{
+    width: 100%;
+    float: none;
+    text-align: center;
+   }
+   .contact-section form{
+    width: 100%;
+    margin-left: 0;
+   }
+ 
+}
+
+
+@media(max-width:980px){
+    .span_1_of_4{
+        width:49.2%;
+    }
+    .span_1_of_4:nth-child(3){
+        margin-left: 0;
+    }
+    html{
+        font-size: 60.5%;
+    }
+  
+}
+
+@media(max-width:768px){
+    .little-description{
+        width: 100%;
+        margin-left: 0;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+}
+@media(max-width:480px){
+    .span_1_of_4{
+        width: 100%;
+    }
+  
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    .testmonial-section .col:nth-child(3),
+    .testmonial-section .col:nth-child(4) {
+    margin-top: 4rem;
+    }
+}

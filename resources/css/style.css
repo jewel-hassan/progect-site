@@ -1,0 +1,1134 @@
+/* BASIC SETUP */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* HEADING */
+h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+/* MOBILE MENU */
+.overly-content{
+    position: relative;
+    
+   
+  
+   
+}
+
+.mobile-menu span{
+    cursor: pointer;
+    color:#fff;
+    font-size: 4rem;
+    float: right;
+    margin-top: 2rem;
+    display: none;
+}
+.overly span{
+    
+    cursor: pointer;
+    color:#fff;
+    font-size: 5rem;
+    top:3rem;
+    right: 3rem;
+    position: fixed;
+    z-index: 2;
+
+}
+.overly{
+    background-color: rgba(0, 0, 0, 0.9);
+    
+    height: 100%;
+    left: 0;
+    top:0;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: .6s;
+    
+    
+}
+.overly .close-btn{
+    position: absolute;
+    top:2rem;
+    right: 2rem;
+}
+.responsive-nav{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+.overly a{
+    font-size: 4rem;
+    color:#999;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem;
+    display:none;
+}
+.overly a:hover{
+    color: #fff;
+}
+
+/* REUSABLE COMPONENTS */
+
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 1%;
+}
+
+.box p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+/* button */
+.btn:link,
+.btn:visited,
+.btn {
+    background-color: #ff6633;
+    border-bottom: 0.3rem solid #000;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: .3rem;
+    margin-top: 4.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 5rem;
+    font-weight: 60rem;
+    display: inline-block;
+}
+
+/* HEADER SECTION */
+header {
+    background: linear-gradient(rgba(14, 13, 14, 0.9), rgba(14, 13, 14, 0.9)), url(img/picture1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+    height: 85vh;
+    position: relative;
+}
+
+.logo {
+    width: auto;
+    height: 3.5rem;
+    margin-top: 3.5rem;
+    float: left;
+}
+.hero-text-box{
+    width: 114rem;
+}
+
+/* MAIN NAVIGATION */
+.main-nav {
+    float: right;
+    margin-top: 4rem;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: .5rem;
+}
+
+.main-nav li:first-child {
+    margin-left: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: rgba(102, 51, 102, 0);
+    padding: 0.6rem 1.6rem;
+    border-radius: .3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: .5s;
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+    background-color: rgba(102, 51, 102, 1);
+}
+
+.main-nav li.active a {
+    background-color: rgba(102, 51, 102, 1);
+}
+
+/* STACKY NAVBAR */
+.stacky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(153, 102, 153, 0.9);
+    z-index: 999;
+}
+
+.stacky .logo {
+    margin-top: 0;
+}
+
+.stacky .main-nav {
+    margin-top: 0;
+}
+
+
+
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn-hero :link,
+.btn-hero :visited {
+    background-color: #ff6633;
+    border-color: #cc6633;
+}
+
+/* SERVICES SECTION */
+
+.service-section {
+    padding: 8rem 0;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(rgba(0, 204, 153, 0.9), rgba(0, 204, 153, 0.9)), url(img/picture2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.services-icon {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 4rem;
+}
+
+.service-section .little-description {
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.service-section h2 {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+
+
+
+}
+
+.service-section h2::after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 8.5rem;
+    background-color: #009999;
+    margin: 1rem auto;
+}
+
+.service-section h3 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 6rem;
+}
+
+.service-section p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: #fff;
+}
+
+
+
+
+/* TEAM SECTION */
+.team-section {
+    background: linear-gradient(rgba(252, 249, 249, 0.9), rgba(252, 249, 249, 0.9)), url(img/picture3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    color: #333366;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+
+}
+
+.team-section h2::after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 8.5rem;
+    background-color: #cccccc;
+    margin: 1rem auto;
+}
+
+.team-section .little-description {
+    color: #333366;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.team-member {
+
+    border-radius: 50%;
+    margin-top: 4rem;
+}
+
+.team-section h3 {
+    color: #333333;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 6rem;
+}
+
+.role {
+    color: #33ccff;
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-top: .5rem;
+    font-weight: 400;
+}
+
+.team-section p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: #333366;
+}
+
+.social-link {
+    margin-top: 3.5rem;
+}
+
+.social-link li {
+    display: inline-block;
+    margin-left: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #cccccc;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.5s;
+
+}
+
+.social-link li a:link,
+.social-link li a:visited {
+    font-size: 1.6rem;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.social-link li:hover {
+    background: #333333;
+    transform: rotate(80deg);
+}
+
+/* SKILL SECTION */
+.skill-section {
+    padding: 8rem 0;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(img/picture4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.skill-section h2 {
+    color: #333366;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+}
+
+.skill-section h2::after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 8.5rem;
+    background-color: #cccccc;
+    margin: 1rem auto;
+}
+
+.skill-section .little-description {
+    color: #333366;
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.skill-section h3 {
+    color: #333333;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 6rem;
+}
+
+/* ANIMATED CIRCLE */
+svg.radial-progress circle {
+    stroke-width: 7;
+}
+
+svg.radial-progress text {
+    fill: #000;
+    font-weight: 600;
+}
+
+svg.web-design circle {
+    stroke: #33ccff;
+}
+
+svg.html-css circle {
+    stroke: #cc3399;
+}
+
+svg.graphic-design circle {
+    stroke: #00cc99;
+}
+
+svg.ui-ux circle {
+    stroke: #ff6633;
+}
+
+.oval {
+    margin-top: 8.5rem;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio-section {
+    padding: 8rem 0;
+    text-align: center;
+    background: linear-gradient(rgba(255, 204, 153, 0.9), rgba(255, 204, 153, 0.9)), url(img/picture5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    color: #333333;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+}
+
+.portfolio-section h2::after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 8.5rem;
+    background-color: rgba(36, 29, 31, 0.39);
+    margin: 1rem auto;
+}
+
+.portfolio-section .little-discription {
+    color: #333333;
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 3rem;
+    text-align: center;
+}
+
+/* PORTFOLIO BUTTON */
+.portfolio-filter .btn-button {
+    width: 8.5rem;
+    height: 4rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: rgb(248, 176, 103);
+    border: none;
+    border-radius: .3rem;
+    margin-left: 1.5rem;
+    margin-top: 4.5rem;
+    color: #333333;
+    transition: .6s;
+}
+
+
+.portfolio-filter .btn-button:hover {
+    cursor: pointer;
+    box-shadow: inset .3rem .3rem .3rem .3rem #333333;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-section .col:nth-child(3) {
+    margin-left: 0;
+}
+
+.portfolio-section h4 {
+    color: #333333;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+
+.portfolio-content {
+    margin-top: 6rem;
+}
+
+.portfolio-section .mixitup-control-active {
+    background-color: #fff;
+}
+
+/* TESTMONIAL SECTION */
+
+.testmonial-section {
+    padding: 8rem 0;
+    background: linear-gradient(rgba(204, 51, 153, 0.9), rgba(204, 51, 153, 0.9)), url(img/picture6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+.testmonial-section h2 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    text-align: center;
+}
+
+.testmonial-section h2::after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 8.5rem;
+    background-color: rgba(36, 29, 31, 0.39);
+    margin: 1rem auto;
+}
+
+.testmonial-section .little-discription {
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.testmonial-section .col:nth-child(3) {
+    margin-left: 0;
+}
+
+.testmonial-section .col:nth-child(1),
+.testmonial-section .col:nth-child(2) {
+    margin-top: 4rem;
+}
+
+.testmonial-section .col:nth-child(3),
+.testmonial-section .col:nth-child(4) {
+    margin-top: 8rem;
+}
+
+.clien-photo {
+    width: 10rem;
+    float: left;
+}
+
+.clien-photo img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+.clien-review {
+    width: 40rem;
+}
+
+.clien-review p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+    font-style: italic;
+
+}
+
+.testmonial-section h3 {
+    color: #fff;
+    font-size: 2.4rem;
+}
+
+.testmonial-section .role {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    padding: 8rem 0;
+    background: linear-gradient(rgba(51, 102, 153, 0.9), rgba(51, 102, 153, 0.9)), url(img/picture7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    text-align: center;
+
+}
+
+.contact-section h2 {
+    color: #fff;
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.contact-section h2::after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    width: 8.5rem;
+    background-color: rgba(36, 29, 31, 0.39);
+    margin: 1rem auto;
+}
+
+.contact-section .little-description {
+    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.contact-section form {
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+
+}
+
+.contact-section .col input[name="email"],
+.contact-section .col input[name="name"],
+textarea {
+    background-color: #333366;
+    border: .2rem solid #333366;
+    border-radius: 0.5rem;
+    border: none;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    color: #fff;
+    margin: .5rem 0;
+
+}
+
+.contact-section textarea {
+    height: 20rem;
+}
+
+.contact-section form ::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.btn-submit {
+    width: 29rem;
+    height: 7rem;
+    background-color: #33ccff;
+    border: none;
+    border-bottom: .3rem solid rgb(41, 48, 51);
+    cursor: pointer;
+    margin-top: 6rem;
+
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 4.8rem 0;
+    background: #333399;
+}
+
+footer ul {
+    width: 90%;
+    margin-left: 4.5%;
+
+
+}
+
+footer ul li a:link,
+footer ul li a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.4rem;
+    transition: .6s;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+
+}
+
+footer ul li:hover a {
+    color: #3366cc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
